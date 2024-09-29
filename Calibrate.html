@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+<head><link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+<title>Calibrate</title></head>
+<body>
+    {% extends "Template.html" %}
+    {% block content %}
+    <div id="calibrateSpace">
+      <label id="Empty">Empty. click here to record the sound of your environment</label>
+      <button id="emptyButton" onclick="paused()"></button>
+    </div>
+    <div id="calibrateEar">
+      <label id="Ear">Ear. click here to record how you pronounce the sound ear</label>
+      <button id="earButton" onclick="ear()">Ear</button>
+    </div>
+  {% endblock %}
+</body>

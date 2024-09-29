@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+  </head>
+    <body onload="updateBackgroundColor('{{ background_color }}')">
+        <div class="Banner">
+            <div class="buttons">
+              <div id="Table" class="small_button">
+                <a href="Home" class="small_button2"><h2 style="margin-top:70px;">Table</h2></a>
+              </div><div id="Settings" class="small_button">
+                <a href="/Settings" class="small_button2"><h2 style="margin-top:70px;">Settings</h2></a>
+              </div>
+              <div id="Document" class="small_button">
+                <a href="/Document" class="small_button2"><h2 style="margin-top:70px;">Document</h2></a>
+              </div>
+              <div id="Calibrate" class="small_button">
+                <a href="/Calibrate" class="small_button2"><h2 style="margin-top:70px;">Calibrate</h2></a>
+              </div>
+              
+            </div>
+        </div>
+      {% block content %}
+      {% endblock %}
+    </body>
+</html>

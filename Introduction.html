@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+<head><link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+<title>Introduction</title></head>
+<body>
+    <div id="UserGuide">
+        <div id="InfoBox">
+        <h3 id="Info"></h3>
+        </div>
+        <div id="PageNumberBox">
+        <h2 id="PageNumber">Page</h2>
+        </div>
+    </div>
+    <div id="InfoControls">
+        <a id="buttonReference" href="#"><button id="nextPage" onclick=nextInfo()>Next Step</button></a>
+    </div>
+</body>

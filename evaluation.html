@@ -1,0 +1,63 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>create dynamic editable table with html using java script </h1>
+<input type="button" value="add Row" onclick="addRow()"></input>
+<input type="button" value="add column" onclick="addColumn()"></input>
+<input type="button" value="remove Row" onclick="removeRow()"></input>
+<input type="button" value="remove column" onclick="removeColumn()"></input>
+
+<table id="addTable" width="200px" border="1">
+<tr>
+<td>1</td>
+<td><input type="text"></input></td>
+<td><input type="text"></input></td>
+</tr>
+</table>
+<script type="text/javascript">
+function addRow() {
+var table=document.getElementById("addTable");
+var rowCount=table.rows.length;
+var addRow = table.insertRow(rowCount);
+for(x=0;x<table.rows[0].cells.length;x++){
+    cell=addRow.insertCell(x)
+    if(x==0){
+        cell.innerHTML=rowCount+1
+    }
+    else{
+        var element=document.createElement("input");
+        element.type="text";
+        element.name="taxtbox";
+        cell.appendChild(element);
+    }
+}
+}
+function addColumn(){
+    var table=document.getElementById("addTable");
+    var rowCount=table.rows[0].cells.length
+    console.log(rowCount)
+    for(x=0;x<table.rows.length;x++){
+        Row=table.rows[x]
+        console.log(Row)
+        var element=document.createElement("td");
+        var element2=document.createElement("input");
+
+        // create a element in table not just a text box
+        element2.type="text";
+        element2.name="taxtbox";
+        element.appendChild(element2)
+        Row.appendChild(element)
+    }
+}
+function removeRow(){
+    var table=document.getElementById("addTable");
+    var rowCount=table.rows.length;
+    console.log(rowCount)
+    var addRow = table.insertRow(rowCount);
+    table.deleteRow(rowCount-1)
+}
+</script>
+</body>
+</html>

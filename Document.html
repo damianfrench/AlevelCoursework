@@ -1,0 +1,15 @@
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+  {% extends "Template.html" %}
+  {% block content %}
+  <div id="editing">
+  <p contenteditable="true" style="margin:2px;" id="DocumentData" onclick="Clicked()">{{ output }}</p>
+  <button id="savingButton" onclick=downloadFile()>Save</button>
+  </div>
+  <div class="recordingControl">
+    <button class="RecordingButton" onclick="RecordRequestDoc()">Record</button>
+    <button class="StopButton" onclick="StopRequestDoc()">Stop</button>
+  </div>
+  <script src="{{ url_for('static', filename='script.js')}}">
+  </script>
+  <p1 id="RecordingInfo"></p1>
+{% endblock %}

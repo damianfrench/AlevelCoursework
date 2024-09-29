@@ -1,0 +1,335 @@
+div{
+    border:solid 2px black;
+}
+
+body{
+    min-height:100px;
+    height:100vh;
+    border:solid 2px black;
+    padding:2px;
+    width:100%;
+    overflow:auto;
+}
+
+.Banner{
+  height:calc(20% - 8px);
+  width:calc(100% - 28px);
+  margin:2px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:50px;
+  padding-bottom:50px;
+  
+}
+
+
+.buttons{
+    height:calc(100% - 21px);
+    width:calc(90% - 46px);
+    margin:auto;
+  padding-left:2px;
+  padding-right:2px;
+  padding-top:4px;
+  padding-bottom:8px;
+
+}
+
+.button{
+  background-color:black;
+  float:left;
+  text-align:center;
+}
+
+.small_button{
+  height:calc(100%);
+  width:calc((100% / 4) - 4px);
+  float:left;
+  text-align:center;
+}
+
+
+#editing{
+  height:calc(50% - 8px);
+  margin:2px;
+}
+
+#control{
+  height:calc(68% - 8px);
+  margin:2px;
+  width:calc(100% - 8px);
+}
+
+#controls{
+  height:20%;
+  width:20%;
+  float:left;
+  margin:2px;
+}
+
+#rows,#columns{
+  width:calc(100% - 10px);
+  height:calc((100% / 3) - 8px);
+  margin:2px;;
+}
+
+#makeTable{
+  height:calc((100% / 3) - 8px);
+  margin:auto;
+  width:100%;
+}
+
+
+.slidecontainer {
+  width: 50%; /* Width of the outside container */
+  margin-bottom:20px;
+  margin-top:20px;
+  margin-right:2px;
+  float:right;
+}
+
+/* The slider itself */
+.slider {
+  background:linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+#myVolumeRange{
+  background:linear-gradient(to right,black ,white);
+}
+
+#red-slider{
+  background:linear-gradient(to right,black, red,white);
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /*Specified height */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+#blue-slider{
+  background:linear-gradient(to right,black, blue,white);
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+#green-slider{
+  background:linear-gradient(to right,black, green,white);
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  border:2px solid black;
+  -webkit-appearance: none; /* Override default look */
+  /* appearance: none; */
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#volume{
+  height:calc(25% - 40px);
+  width:calc(100% - 8px);
+  margin-bottom:10px;
+  margin-left:2px;
+  margin-top:2px;
+}
+
+#Colour{
+  height:calc(50% - 50px);
+  width:calc(100% - 8px);
+  margin-top:10px;
+  margin-left:2px;
+  margin-top:2px;
+}
+
+#KeyRecord{
+  height:calc(25% - 40px);
+  width:calc(100% - 8px);
+  margin-top:10px;
+  margin-left:2px;
+  margin-top:2px;
+  text-align:center;
+}
+
+#R{
+  height:50px;
+  width:50px;
+  margin-left:50px;
+  margin-top:25px;
+}
+
+#KeyStop{
+  height:calc(25% - 40px);
+  width:calc(100% - 8px);
+  margin-top:10px;
+  margin-left:2px;
+  margin-top:2px;
+  text-align:center;
+}
+
+#S{
+  height:50px;
+  width:50px;
+  margin-left:50px;
+  margin-top:25px;
+}
+
+#savingButton{
+  float:right;
+  margin-right:calc(50% - 20px);
+}
+
+#DocumentData{
+  height:90%;
+}
+
+#UserGuide{
+  margin-left:40px;
+  margin-right:40px;
+  width:calc(100% - 80px);
+  height:75%;
+  margin-top:40px;
+}
+
+#InfoBox{
+  text-align:center;
+  margin:auto;
+  height:calc(85% - 4px);
+  margin-left:2px;
+  margin-right:2px;
+  margin-top:2px;
+}
+
+#Info{
+  margin-top:180px;
+}
+
+#PageNumberBox{
+  text-align:right;
+  margin-top:2px;
+  margin-left:2px;
+  margin-right:2px;
+  height:calc(15% - 10px);
+}
+
+#PageNumber{
+  margin-top:35px;
+  margin-right:20px;
+}
+
+#InfoControls{
+  height:calc(25% - 50px);
+  text-align:center;
+  margin-top:2px;
+}
+
+#nextPage{
+  margin-top:30px;
+  height:100px;
+  width:500px;
+}
+
+.Cell{
+  border:solid 2px black;
+}
+
+table{
+  border:solid 2px black;
+  overflow:scroll;
+
+}
+
+.recordingControl{
+  height:calc(20% - 30px);
+  margin:2px;
+}
+
+.RecordingButton{
+  height:calc(100% - 4px);
+  width:200px;
+  margin:2px;
+  float:left;
+  margin-left:calc(50% - 204px);
+}
+
+.StopButton{
+  height:calc(100% - 4px);
+  width:200px;
+  margin:2px;
+  float:right;
+  margin-right:calc(50% - 204px);
+}
+
+#RecordingInfo{
+  width:100px;
+  text-align:center;
+  float:left;
+  height:20px;
+  border:solid 2px black;
+  margin:2px;
+  margin-left:calc(50% - 50px);
+}
+
+#calibrateSpace{
+  height:100px;
+  width:auto;
+  margin:2px;
+  margin-top:150px;
+  text-align:center;
+}
+#calibrateEar{
+  height:100px;
+  width:auto;
+  margin:2px;
+  margin-top:50px;
+  text-align:center;
+}
+
+#emptyButton{
+  height:50px;
+  width:50px;
+  margin-left:50px;
+  margin-top:25px;
+}
+#earButton{
+  height:50px;
+  width:50px;
+  margin-left:50px;
+  margin-top:25px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+<title>Settings</title></head>
+<body>
+{% extends "Template.html" %}
+{% block content %}
+<div id="control">
+    <div id="volume">
+    <h2 style=float:left;margin-left:400px;>background Volume</h2>
+    <div class="slidecontainer">
+        <input type="range" min="-5" max="5" value="0" class="slider" id="myVolumeRange" style="width:calc(100% - 4px);">
+    </div>
+    </div>
+    <div id="Colour">
+    <h2 style=float:left;margin-left:400px;>colour Scheme</h2>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="255" value="127" class="slider" id="red-slider" style="width:calc(100% - 4px);">
+    </div>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="255" value="127" class="slider" id="blue-slider" style="width:calc(100% - 4px);">
+    </div>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="255" value="127" class="slider" id="green-slider" style="width:calc(100% - 4px);">
+    </div>
+    <!-- <div id="Image" style=float:left;>
+        <img src="Unknown.jpeg" alt="shush" width=50% heigth=25px>
+    </div> -->
+    </div>
+    <div id="KeyRecord">
+        <h2 style=float:left;margin-left:400px;margin-top:25px;>enter keybind for record button</h2>
+        <button id="R">{{value}}</button>
+    </div>
+    <div id="KeyStop">
+        <h2 style=float:left;margin-left:400px;margin-top:25px;>enter keybind for the Stop button</h2>
+        <button id="S">{{svalue}}</button>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='script.js')}}">
+</script>
+{% endblock %}
