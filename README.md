@@ -5,4 +5,4 @@ by having the size of these sections correspond with the average size of a phone
 in that phoneme with pre-recorded frequencies that I created of my speaking each phoneme.
 
 if this repo is used, take the files titled styles and scripts and add them to a folder called static, then take the .html files and the jpeg
-files and add them to a folder templates.
+files and add them to a folder called templates.
